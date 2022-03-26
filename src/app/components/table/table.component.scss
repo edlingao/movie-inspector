@@ -1,0 +1,15 @@
+.movie-table {
+  margin: auto;
+  width: 90%;
+  box-shadow: 0rem 0rem 1rem rgb(0 0 0 / 40%);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .mat-column {
+    &-year{
+      width: 10rem;
+      text-align: center;
+    }
+  }
+
+}
