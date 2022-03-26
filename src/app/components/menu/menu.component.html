@@ -1,0 +1,12 @@
+ <mat-selection-list #view [multiple]="false">
+  <mat-list-option value="home" class="option">
+    <mat-icon>home</mat-icon> Home page
+  </mat-list-option>
+  <mat-list-option value="contact" class="option">
+    <mat-icon>home</mat-icon> Home page
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Option selected: {{view.selectedOptions.selected[0]?.value}}
+</p>
