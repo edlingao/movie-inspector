@@ -1,0 +1,14 @@
+<div class="main-container">
+  <div class="table-container">        
+    <mat-toolbar color="primary" class="table-controls" >
+      <button mat-raised-button (click)="advancePage(-1)">
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <p class="label">Page {{page}}</p>
+      <button mat-raised-button (click)="advancePage(1)">
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </mat-toolbar>
+    <app-table [movies]="movies"></app-table>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .table-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    .table-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+
+      margin-bottom: 1rem;
+    }
+  }
+
+
+}
