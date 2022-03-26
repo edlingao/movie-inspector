@@ -1,3 +1,15 @@
-<h1>{{title}}</h1>
+<mat-sidenav-container>
+  <mat-sidenav #menuSection mode="over" class="menu">
+    <app-menu></app-menu>
+  </mat-sidenav>
+  <mat-sidenav-content >
+    <mat-toolbar color="primary" class="toolbar-menu mat-elevation-z6" style="z-index: 2;">
+      <button (click)="menuSection.toggle()"  mat-icon-button >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Movie Inspector</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-<router-outlet></router-outlet>
