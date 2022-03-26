@@ -1,8 +1,23 @@
-.menu-item {
-  .option {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.mat-list-base {
+  padding: unset;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-decoration: none;
+  transition: all .2s;
+
+  &:hover,
+  &.active {
+    background: rgba($color: #3f51b5, $alpha: .7);
+    color: white;
+  }
+
+  .mat-icon {
+    margin-right: 1rem;
   }
 }

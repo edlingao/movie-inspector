@@ -17,7 +17,7 @@ export class PaginatorService {
   }
 
   async setMovies() {
-    this.movies = await this.movieService.getMovies();
+    this.movies = this.movies.length === 0 ? await this.movieService.getMovies() : this.movies;
     return this.movies;
   }
 

@@ -7,7 +7,8 @@ import { IndexComponent } from './views/movies/movies.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    pathMatch: 'full',
+    redirectTo: 'home',
   },
   {
     path: 'movies',
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
   }
 ];
 
