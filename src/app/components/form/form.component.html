@@ -1,1 +1,15 @@
-<p>form works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+  
+  <div class="field-container" [class.error]="isFieldValid(field.name)" *ngFor="let field of fields">
+    <label>
+      <p class="label-text">{{capitalize(field.name)}}</p>
+      <input [class.error]="isFieldValid(field.name)" [formControlName]="field.name" [placeholder]="field.placeholder" >
+    </label>
+    <div class="error-box" *ngIf="isFieldValid(field.name)">
+      <p class="mat-error">{{eval(field.error)}}</p>
+    </div>
+    
+  </div>
+  <div *ngIf="(myForm.valid) ? onValid(true) : ''"></div>
+  <button mat-raised-button color="primary"  type="submit" [disabled]="myForm.invalid">Send</button>
+</form>

@@ -1,3 +1,18 @@
-<p>contact works!</p>
-
-<app-form></app-form>
+<div class="main-container">
+  <div class="section left-section">
+    <h1 class="text-presentation" >We'd love to hear from you!</h1>
+    <div class="image-section">
+      <h1 class="text-presentation darken">We'd love to hear from you!</h1>
+      <img class="image" src="assets/svg/undraw_profile.svg" alt="netflix - ilustration">
+    </div>
+  </div>
+  <div class="section right-section">
+    <h1>Contact us</h1>
+    <app-form
+      class="form-component"
+      [maxChars]="10"
+      (onValidEvent)="onValid($event)"
+      (onSubmitEvent)="onSubmit($event)"
+    ></app-form>
+  </div>
+</div>

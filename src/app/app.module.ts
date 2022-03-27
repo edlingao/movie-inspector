@@ -12,11 +12,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { TableComponent } from './components/table/table.component';
 import { MatListModule } from '@angular/material/list';
 import { MenuComponent } from './components/menu/menu.component';
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app/app.component';
 import { HomeComponent } from './views/home/home.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
-import { ReactiveFormsModule } from '@angular/forms';
 import { ReactiveFormsModuleModule } from './modules/reactive-forms-module/reactive-forms-module.module'
 
 @NgModule({
@@ -39,7 +38,6 @@ import { ReactiveFormsModuleModule } from './modules/reactive-forms-module/react
     MatSidenavModule,
     MatListModule,
     MatInputModule,
-    ReactiveFormsModule,
     ReactiveFormsModuleModule,
   ],
   providers: [],
