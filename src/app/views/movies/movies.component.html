@@ -1,11 +1,11 @@
 <div class="main-container">
   <div class="table-container">
     <div class="table-controls">
-      <button mat-raised-button (click)="advancePage(-1)">
+      <button mat-raised-button color="primary" (click)="advancePage(-1)" [disabled]="page <= 1">
         <mat-icon>navigate_before</mat-icon>
       </button>
-      <h2 class="label">Page {{page}}</h2>
-      <button mat-raised-button (click)="advancePage(1)">
+      <h2 class="label">Page {{page}} of {{paginator.total}}</h2>
+      <button mat-raised-button color="primary" (click)="advancePage(1)" [disabled]="page >= paginator.total">
         <mat-icon>navigate_next</mat-icon>
       </button>
     </div>
