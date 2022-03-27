@@ -40,6 +40,7 @@ import { ReactiveFormsModuleModule } from './modules/reactive-forms-module/react
     MatListModule,
     MatInputModule,
     ReactiveFormsModule,
+    ReactiveFormsModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
