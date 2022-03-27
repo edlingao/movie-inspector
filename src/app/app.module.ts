@@ -15,7 +15,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { ContactComponent } from './views/contact/contact.component';
-
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModuleModule } from './modules/reactive-forms-module/reactive-forms-module.module'
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { ContactComponent } from './views/contact/contact.component';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

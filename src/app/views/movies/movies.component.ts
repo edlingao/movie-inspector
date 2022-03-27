@@ -11,7 +11,6 @@ export class IndexComponent implements OnInit {
   paginator: PaginatorService;
   movies: Array<any> = [];
   page: number = 1;
-
   constructor(
     // I'm implementing my own paginator instead of using material pagination
     // For you guys to be able to test my logic on this kind of issues
